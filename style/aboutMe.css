@@ -46,3 +46,13 @@ p.card-text {
   padding-top: 20px;
   font-size: 20px;
 }
+/* Breakpoints */
+@media screen and (max-width: 576px) {
+  .card-text {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .p-5 {
+    padding: 0 10px !important;
+  }
+}

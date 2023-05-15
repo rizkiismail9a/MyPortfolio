@@ -110,8 +110,12 @@ footer div {
   /* background-color: aqua; */
 }
 #litteral,
-#web {
+#web,
+.footer {
   border-top: 1px solid rgb(138, 120, 120);
+}
+#web img {
+  width: 80%;
 }
 .card {
   width: 20vw;
@@ -123,14 +127,16 @@ footer div {
 /* Breakpoints */
 @media screen and (max-width: 576px) {
   #illustration,
-  #litteral {
+  #litteral,
+  #web {
     display: grid;
     grid-template-columns: 1fr;
     width: 80%;
     /* justify-content: space-around; */
   }
+
   .card {
-    width: 70vw;
+    width: 70vw !important;
   }
   .noneInPhone {
     display: none;
@@ -138,7 +144,8 @@ footer div {
   .menu-portfolio p i {
     font-size: 1.5rem;
   }
-  footer {
-    margin-left: 20px;
+  .footer {
+    /* margin-left: 20px; */
+    width: 80%;
   }
 }
