@@ -17,7 +17,7 @@ const illustrations = [
   },
   {
     src: "arcanine2.png",
-    title: "Kerry The Snep",
+    title: "Arcanine",
   },
   {
     src: "Ryan.png",
@@ -26,6 +26,14 @@ const illustrations = [
   {
     src: "Kuga.png",
     title: "Kuga Yuma",
+  },
+  {
+    src: "AkuSukaBersamamu2.png",
+    title: "I Like To Be With You",
+  },
+  {
+    src: "Summer.png",
+    title: "Backyard",
   },
 ];
 const cerpen = [
