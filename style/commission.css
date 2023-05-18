@@ -10,7 +10,7 @@ nav {
 body {
   /* background-color: rgb(112, 186, 112);
     background: linear-gradient(rgb(112, 186, 112), #cce4d8); */
-  background-image: url(/aset/img/Doodle.jpg);
+  background-image: url(/aset/img2/Doodle.webp);
   background-size: cover;
 }
 a {
@@ -30,3 +30,127 @@ footer div {
 }
 
 /* Batas Global */
+.body-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 15px;
+  min-height: 100vh;
+  position: relative;
+}
+.header-sidebar p,
+.header-sidebar p i {
+  font-size: 1.3rem;
+}
+.sidebar {
+  box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.37);
+  padding: 18px;
+  height: 80vh;
+  width: 18vw;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+}
+.logo {
+  width: 80%;
+}
+.menu-portfolio p,
+.menu-portfolio p i {
+  margin: 10px 0;
+  list-style: none;
+  font-size: 1em;
+}
+.menu-portfolio p:hover {
+  /* padding: 0 10px; */
+  background: linear-gradient(45deg, #08ff00, #fff);
+  border: none;
+  border-radius: 10px;
+  transition: all ease-in 0.2s;
+}
+#menu-toggle {
+  align-self: flex-end;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  height: 20px;
+  /* background-color: #cd2b07; */
+}
+#hamburger-input {
+  width: 30px;
+  height: 30px;
+  /* opacity: 0.3; */
+  display: none;
+}
+#hamburger {
+  background-color: black;
+  width: 20px;
+  height: 3px;
+}
+.main-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: brown; */
+  flex-grow: 1;
+  width: 80vw;
+  position: absolute;
+  right: 0px;
+  /* float: right; */
+}
+#illustration,
+#litteral,
+#web {
+  display: grid;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+  /* justify-content: space-around; */
+  /* background-color: aqua; */
+}
+#litteral,
+#web,
+.footer {
+  border-top: 1px solid rgb(138, 120, 120);
+}
+#web img {
+  width: 80%;
+}
+.card {
+  width: 20vw;
+  margin: 10px;
+  background-color: transparent;
+  border: none;
+}
+#menuArt {
+  margin-left: 5px;
+}
+
+/* Breakpoints */
+@media screen and (max-width: 576px) {
+  #illustration,
+  #litteral,
+  #web {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    /* justify-content: space-around; */
+  }
+
+  .card {
+    width: 70vw !important;
+  }
+  .noneInPhone {
+    display: none;
+  }
+  .menu-portfolio p i {
+    font-size: 1.5rem;
+  }
+  .footer {
+    /* margin-left: 20px; */
+    width: 80%;
+  }
+}

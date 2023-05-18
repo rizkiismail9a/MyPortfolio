@@ -8,8 +8,9 @@ nav {
   box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.37);
 }
 body {
-  background-image: url(/aset/img/Doodle.jpg);
+  background-image: url(/aset/img2/Doodle.webp);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 a {
   text-decoration: none;

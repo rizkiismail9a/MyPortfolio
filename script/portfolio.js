@@ -1,38 +1,38 @@
 const illustrations = [
   {
-    src: "Quality time1.png",
+    src: "Quality time1.webp",
     title: "Quality Time",
   },
   {
-    src: "singalong.png",
+    src: "singalong.webp",
     title: "Sing Along",
   },
   {
-    src: "Ketiduran.png",
+    src: "Ketiduran.webp",
     title: "Overslept",
   },
   {
-    src: "Kerry.png",
+    src: "Kerry.webp",
     title: "Kerry The Snep",
   },
   {
-    src: "arcanine2.png",
+    src: "arcanine2.webp",
     title: "Arcanine",
   },
   {
-    src: "Ryan.png",
+    src: "Ryan.webp",
     title: "Ryan The Rabbit",
   },
   {
-    src: "Kuga.png",
+    src: "Kuga.webp",
     title: "Kuga Yuma",
   },
   {
-    src: "AkuSukaBersamamu2.png",
+    src: "AkuSukaBersamamu2.webp",
     title: "I Like To Be With You",
   },
   {
-    src: "Summer.png",
+    src: "Summer.webp",
     title: "Backyard",
   },
 ];
@@ -67,7 +67,7 @@ const card = document.getElementById("illustration");
 card.innerHTML = "";
 for (let i = 0; i < illustrations.length; i++) {
   card.innerHTML += `<div class="card mx-2">
-  <img src="aset/img/${illustrations[i].src}" class="card-img-top"  />
+  <img src="aset/img2/${illustrations[i].src}" class="card-img-top"  />
   <div class="card-body">
     <p class="card-text">${illustrations[i].title}</p>
   </div>
