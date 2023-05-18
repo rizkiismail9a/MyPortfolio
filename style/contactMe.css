@@ -16,14 +16,12 @@ a {
   color: black;
 }
 .form-wrapper {
-  /* align-items: center; */
   margin: 0 auto;
   width: 80vw;
   flex-direction: column;
   height: 90vh;
 }
 .textarea {
-  /* resize: none; */
   height: 50%;
 }
 textarea,
