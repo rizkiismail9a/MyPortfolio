@@ -1,39 +1,54 @@
 const illustrations = [
   {
-    src: "Quality time1.webp",
-    title: "Quality Time",
-  },
-  {
     src: "singalong.webp",
-    title: "Sing Along",
+    title: "Sing Along - Commission Project",
   },
+
   {
     src: "Ketiduran.webp",
-    title: "Overslept",
+    title: "Overslept - Personal Project",
   },
+
   {
-    src: "Kerry.webp",
-    title: "Kerry The Snep",
+    src: "spare.webp",
+    title: "Magical Orb - Commission Project",
   },
   {
     src: "arcanine2.webp",
-    title: "Arcanine",
+    title: "Arcanine - Commission Project",
   },
+
+  {
+    src: "Quality time1.webp",
+    title: "Quality Time - Personal Project",
+  },
+
+  {
+    src: "Kerry.webp",
+    title: "Kerry The Snep - Commission Project",
+  },
+  {
+    src: "Elang jawa.webp",
+    title: "Banu - Personal Project",
+  },
+
   {
     src: "Ryan.webp",
     title: "Ryan The Rabbit",
   },
+
   {
     src: "Kuga.webp",
-    title: "Kuga Yuma",
+    title: "Kuga Yuma - Personal Project",
   },
+
   {
-    src: "AkuSukaBersamamu2.webp",
-    title: "I Like To Be With You",
+    src: "riding.webp",
+    title: "Berbanteng - Personal Project",
   },
   {
     src: "Summer.webp",
-    title: "Backyard",
+    title: "Backyard - Personal Project",
   },
 ];
 const cerpen = [
@@ -66,18 +81,18 @@ const cerpen = [
 const card = document.getElementById("illustration");
 card.innerHTML = "";
 for (let i = 0; i < illustrations.length; i++) {
-  card.innerHTML += `<div class="card mx-2">
-  <img src="aset/img2/${illustrations[i].src}" class="card-img-top"  />
-  <div class="card-body">
-    <p class="card-text">${illustrations[i].title}</p>
+  card.innerHTML += `
+  <div class="${illustrations[i].title}">
+  <img src="aset/img2/${illustrations[i].src}"  />
+  <p>${illustrations[i].title}</p>
   </div>
-</div>`;
+  `;
 }
 
 const card2 = document.getElementById("litteral");
 card2.innerHTML = "";
 for (let i = 0; i < cerpen.length; i++) {
-  card2.innerHTML += `<div class="card" style="width: 18rem">
+  card2.innerHTML += `<div class="card" >
   <img src="${cerpen[i].src}" class="card-img-top" alt="..." />
   <div class="card-body">
     <h5 class="card-title"><a href="${cerpen[i].href}">${cerpen[i].title} </a></h5>

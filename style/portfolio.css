@@ -10,7 +10,6 @@ nav {
 body {
   background-image: url(/aset/img2/Doodle.webp);
   background-size: cover;
-  background-repeat: no-repeat;
 }
 a {
   text-decoration: none;
@@ -63,64 +62,82 @@ footer div {
 }
 .menu-portfolio p:hover {
   padding: 0 10px;
-  background: linear-gradient(45deg, #08ff00, #fff);
+  background: linear-gradient(45deg, #58d154, #fff);
   border: none;
   border-radius: 10px;
   transition: all ease-in 0.2s;
 }
-#menu-toggle {
-  align-self: flex-end;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 20px;
-  height: 20px;
-}
-#hamburger-input {
-  width: 30px;
-  height: 30px;
 
-  display: none;
-}
-#hamburger {
-  background-color: black;
-  width: 20px;
-  height: 3px;
-}
 .main-content {
   display: flex;
   align-items: center;
   flex-direction: column;
-
   flex-grow: 1;
   width: 80vw;
   position: absolute;
   right: 0px;
 }
-#illustration,
+
 #litteral,
 #web {
   display: grid;
-
-  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 20px;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr;
   width: 90%;
 }
-#litteral,
-#web,
-.footer {
+#illustration {
+  display: grid;
+  margin-left: 20px;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 90%;
+}
+#illustration p {
+  display: inline;
+  font-size: 20px;
+}
+#illustration img {
+  width: 100%;
+  box-shadow: 5px 5px 8px rgba(128, 128, 128, 0.37);
+  border: none;
+  border-radius: 10px;
+}
+
+#caption-illus,
+#caption-litteral,
+#caption-web {
+  font-size: 18px;
+  width: 90%;
+  text-align: justify;
   border-top: 1px solid rgb(138, 120, 120);
 }
 #web img {
   width: 80%;
 }
 .card {
-  width: 20vw;
-  margin: 10px;
+  width: 30vw;
   background-color: transparent;
   border: none;
 }
 
 /* Breakpoints */
+@media screen and (min-width: 576px) {
+  .Sing,
+  .Overslept,
+  .Arcanine,
+  .Quality {
+    grid-column: span 2;
+  }
+  .Magical,
+  .Ryan {
+    grid-column: span 4;
+  }
+  .Kerry {
+    grid-column: span 3;
+  }
+}
+/* Atur Posisi Gambar */
 @media screen and (max-width: 576px) {
   #illustration,
   #litteral,
