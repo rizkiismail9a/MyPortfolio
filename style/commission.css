@@ -72,7 +72,8 @@ footer div {
   list-style: none;
 }
 
-.menu-portfolio p:hover {
+.menu-portfolio p:hover,
+#artServices ul li:hover {
   background: linear-gradient(45deg, #58d154, #fff);
   border: none;
   border-radius: 10px;
@@ -98,6 +99,7 @@ footer div {
   font-size: 1.2rem;
 }
 #figure-info {
+  text-align: justify;
   border: 1px dashed red;
 }
 #web,
@@ -116,6 +118,9 @@ footer div {
 #menuArt {
   margin-left: 5px;
 }
+.onlyOnPhone {
+  display: none;
+}
 
 /* Breakpoints */
 @media screen and (max-width: 576px) {
@@ -126,7 +131,9 @@ footer div {
     width: 80%;
     /* justify-content: space-around; */
   }
-
+  .onlyOnPhone {
+    display: block;
+  }
   .card {
     width: 70vw !important;
   }
