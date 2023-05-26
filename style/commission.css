@@ -59,58 +59,53 @@ footer div {
   margin: 10px 0;
   list-style: none;
   font-size: 1em;
+  cursor: pointer;
 }
+.menuArt {
+  transform: rotate(180deg);
+  transition: all 0.8s;
+}
+#artServices {
+  display: none;
+}
+#artServices ul {
+  list-style: none;
+}
+
 .menu-portfolio p:hover {
-  background: linear-gradient(45deg, #08ff00, #fff);
+  background: linear-gradient(45deg, #58d154, #fff);
   border: none;
   border-radius: 10px;
   transition: all ease-in 0.2s;
-}
-#menu-toggle {
-  align-self: flex-end;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 20px;
-  height: 20px;
-}
-#hamburger-input {
-  width: 30px;
-  height: 30px;
-
-  display: none;
-}
-#hamburger {
-  background-color: black;
-  width: 20px;
-  height: 3px;
 }
 .main-content {
   display: flex;
   align-items: center;
   flex-direction: column;
-
   flex-grow: 1;
   width: 80vw;
   position: absolute;
   right: 0px;
-  /* float: right; */
 }
 #illustration,
-#litteral,
 #web {
-  display: grid;
-
-  grid-template-columns: 1fr 1fr 1fr;
   width: 90%;
+  padding: 50px;
+  text-align: justify;
 }
-#litteral,
+#illustration p,
+#web p {
+  font-size: 1.2rem;
+}
+#figure-info {
+  border: 1px dashed red;
+}
 #web,
 .footer {
   border-top: 1px solid rgb(138, 120, 120);
 }
 #web img {
-  width: 80%;
+  width: 20%;
 }
 .card {
   width: 20vw;
@@ -125,7 +120,6 @@ footer div {
 /* Breakpoints */
 @media screen and (max-width: 576px) {
   #illustration,
-  #litteral,
   #web {
     display: grid;
     grid-template-columns: 1fr;
