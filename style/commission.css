@@ -98,9 +98,11 @@ footer div {
 #web p {
   font-size: 1.2rem;
 }
-#figure-info {
+#figure-info,
+#scene-info {
   text-align: justify;
   border: 1px dashed red;
+  padding: 5px;
 }
 #web,
 .footer {
